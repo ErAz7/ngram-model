@@ -1,0 +1,51 @@
+{
+    "name": "ngram-model",
+    "version": "0.1.0",
+    "description": "JavaScript implementation of N-gram model for text generation",
+    "main": "./build/index.js",
+    "types": "./build/index.d.ts",
+    "files": [
+        "build/**/*"
+    ],
+    "scripts": {
+        "dev": "ts-node-dev --respawn --transpile-only ./src",
+        "build": "tsc",
+        "lint": "eslint --ext .ts,.js ./src",
+        "prepare": "yarn build",
+        "prepublishOnly": "yarn lint",
+        "preversion": "yarn lint",
+        "version": "git add src/.",
+        "postversion": "git push && git push --tags"
+    },
+    "author": "ErAz7",
+    "license": "Apache-2.0",
+    "dependencies": {},
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^5.33.0",
+        "@typescript-eslint/parser": "^5.33.0",
+        "eslint": "^8.21.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-config-standard": "^17.0.0",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-n": "^15.2.4",
+        "eslint-plugin-prettier": "^4.2.1",
+        "eslint-plugin-promise": "^6.0.0",
+        "prettier": "^2.7.1",
+        "ts-node-dev": "^2.0.0",
+        "typescript": "^4.7.4"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ErAz7/ngram-model.git"
+    },
+    "keywords": [
+        "N-gram Model",
+        "NLP",
+        "Natural Language Processing",
+        "text generation"
+    ],
+    "bugs": {
+        "url": "https://github.com/ErAz7/ngram-model/issues"
+    },
+    "homepage": "https://github.com/ErAz7/ngram-model#readme"
+}
