@@ -1,6 +1,6 @@
 {
     "name": "ngram-model",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "description": "JavaScript implementation of N-gram model for text generation",
     "main": "./build/index.js",
     "types": "./build/index.d.ts",
@@ -11,7 +11,6 @@
         "dev": "ts-node-dev --respawn --transpile-only ./src",
         "build": "tsc",
         "lint": "eslint --ext .ts,.js ./src",
-        
         "prepare": "yarn build",
         "prepublishOnly": "yarn lint",
         "preversion": "yarn lint",
