@@ -1,6 +1,6 @@
 {
     "name": "ngram-model",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "JavaScript implementation of N-gram model for text generation",
     "main": "./build/index.js",
     "types": "./build/index.d.ts",
