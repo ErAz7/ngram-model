@@ -14,7 +14,7 @@
         "prepare": "yarn build",
         "prepublishOnly": "yarn lint",
         "preversion": "yarn lint",
-        "version": "git add src/.",
+        "version": "git add .",
         "postversion": "git push && git push --tags"
     },
     "author": "ErAz7",
