@@ -11,6 +11,7 @@
         "dev": "ts-node-dev --respawn --transpile-only ./src",
         "build": "tsc",
         "lint": "eslint --ext .ts,.js ./src",
+        
         "prepare": "yarn build",
         "prepublishOnly": "yarn lint",
         "preversion": "yarn lint",
